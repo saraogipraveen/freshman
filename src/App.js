@@ -9,22 +9,19 @@ import {
 import Home from './components/Home';
 import Weather from './components/Weather';
 import Others from './components/Others';
+import NoMatch from './components/NoMatch';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/weather">Weather</Link>
-          <Link to="/others">Others</Link>
-        </nav>
-
-
+        <NavBar />
         <Switch>
           <Route path="/" exact><Home /></Route>
           <Route path="/weather"><Weather /></Route>
           <Route path="/others"><Others /></Route>
+          <Route path="*"><NoMatch /></Route>
         </Switch>
       </div>
     </Router>
