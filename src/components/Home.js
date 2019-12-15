@@ -1,7 +1,13 @@
 import React from 'react';
+import Container from '../styled_components/Container';
 
 const Home = (props) => {
-    return <h1>Welcome</h1>
+
+    return (
+        <Container>
+           <h1>Welcome</h1>
+        </Container>
+    )
 }
 
 export default Home;
