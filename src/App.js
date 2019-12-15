@@ -7,16 +7,16 @@ import Others from './components/Others';
 import NoMatch from './components/NoMatch';
 import NavBar from './components/NavBar';
 
-function App() {
+const App = () => {
   return (
     <Router>
       <div>
         <NavBar />
         <Switch>
           <Route path="/" exact><Home /></Route>
-          <Route path="/weather"><Weather /></Route>
-          <Route path="/others"><Others /></Route>
-          <Route path="*"><NoMatch /></Route>
+          <Route exact path="/weather"><Weather /></Route>
+          <Route exact path="/others"><Others /></Route>
+          <Route exact path="*"><NoMatch /></Route>
         </Switch>
       </div>
     </Router>
