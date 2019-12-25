@@ -10,7 +10,7 @@ import NavBar from './components/NavBar';
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className="App">
         <NavBar />
         <Switch>
           <Route path="/" exact><Home /></Route>
