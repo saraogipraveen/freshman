@@ -9,15 +9,21 @@ const NavBar = (props) => {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin: 30px 25px;
+        padding: 2rem;
 
     `;
 
     const StyledLink = styled(Link)`
         text-decoration: none;
-        color: #000;
+        // color: #000;
+        color: inherit;
+        font-size: 1.6rem;
         font-weight: bold;
         padding: 0 25px;
+        display: inline-block;
+        transition: 5s all;
+        padding-bottom: .5rem;
+
         &:first-child{
             margin-right: auto;
             font-size: 20px;
